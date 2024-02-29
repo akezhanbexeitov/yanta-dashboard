@@ -12,6 +12,7 @@ import "@refinedev/antd/dist/reset.css";
 import { authProvider, dataProvider, liveProvider } from "./providers";
 import { ForgotPassword, Home, Login, Register } from "./pages";
 import Layout from "./components/layout";
+import { resources } from "./config/resources";
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
             liveProvider={liveProvider}
             notificationProvider={useNotificationProvider}
             authProvider={authProvider}
-            // resources={resources}
+            resources={resources}
             options={{
               syncWithLocation: true,
               warnWhenUnsavedChanges: true,
